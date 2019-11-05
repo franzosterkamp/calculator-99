@@ -1,10 +1,26 @@
 const firstElement = document.querySelector("[name=first]");
 const secondElement = document.querySelector("[name=second]");
-const submitButton = document.querySelector(".submit");
+const plusButton = document.querySelector(".plus");
+const minusButton = document.querySelector(".minus");
+const multiButton = document.querySelector(".multi");
+const divideButton = document.querySelector(".divide");
 
-alert("hallo");
-
-submitButton.addEventListener("click", function() {
+plusButton.addEventListener("click", function() {
   const sum = parseInt(firstElement.value) + parseInt(secondElement.value);
+  alert(sum);
+});
+
+minusButton.addEventListener("click", function() {
+  const sum = parseInt(firstElement.value) - parseInt(secondElement.value);
+  alert(sum);
+});
+
+multiButton.addEventListener("click", function() {
+  const sum = parseInt(firstElement.value) * parseInt(secondElement.value);
+  alert(sum);
+});
+
+divideButton.addEventListener("click", function() {
+  const sum = parseInt(firstElement.value) / parseInt(secondElement.value);
   alert(sum);
 });
