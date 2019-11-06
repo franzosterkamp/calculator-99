@@ -1,3 +1,5 @@
+import { numberLiteralTypeAnnotation } from "@babel/types";
+
 export function sum(first, second) {
   return first + second;
 }
@@ -12,4 +14,8 @@ export function multi(first, second) {
 
 export function divide(first, second) {
   return first / second;
+}
+
+export function countDigits(a) {
+  return a.toString().length;
 }
