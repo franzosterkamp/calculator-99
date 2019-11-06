@@ -61,6 +61,14 @@ button {
   padding: 5px;
 }
 
+.operator {
+  font-size: 20px;
+  font-weight: bold;
+  width: 50px;
+  text-align: center;
+  margin: 5px;
+}
+
 .header {
   background-color: rgb(215, 231, 142);
   border: black solid 2px;
@@ -71,4 +79,14 @@ button {
 
 svg {
   font-weight: bold;
+}
+
+#result {
+  margin: 0 15px;
+  border: solid;
+  background-color: lightgreen;
+  width: 30px;
+  inline-size: auto;
+  height: 15px;
+  padding: 5px;
 }
