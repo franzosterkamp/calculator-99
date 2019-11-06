@@ -1,5 +1,10 @@
 export function createDivWithContent(content) {
-  //google createElement & innerHTML &appendChild MDN
+  let divElement = document.createElement("li");
+  divElement.innerHTML = content;
+
+  return divElement;
 }
 
-export function appendElementtoElement(parent, child) {}
+export function appendElementToElement(parent, child) {
+  return parent.appendChild(child);
+}

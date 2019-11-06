@@ -101,21 +101,23 @@ svg {
 
 .result-area {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
   font-size: 16px;
   font-weight: bold;
   margin-top: 20px;
   width: 300px;
+  align-items: flex-start;
 }
 #result {
   /* margin: 0 15px; */
   border: solid;
   background-color: lightgreen;
-  width: 30px;
-  inline-size: auto;
-  height: 15px;
-  padding: 10px;
+  width: 50px;
+  min-height: 10px;
+  height: auto;
+  /* // padding: 10px; */
   font-weight: bold;
 }
 
@@ -125,7 +127,7 @@ svg {
 
   flex-wrap: wrap;
   padding: 30px;
-  border: solid;
+  /* border: solid; */
 }
 
 .numbers {
@@ -140,4 +142,11 @@ svg {
   height: 50px;
   border: solid;
   margin: 2px 57px;
+}
+
+.mid-area {
+  display: flex;
+  width: 1300px;
+  height: 1200px;
+  justify-content: center;
 }

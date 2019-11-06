@@ -1,7 +1,7 @@
 "use strict";
 
 import { sum, minus, multi, divide, countDigits } from "./lib/operators";
-
+import { createDivWithContent, appendElementToElement } from "./lib/elements";
 const firstElement = document.querySelector("[name=first]");
 const secondElement = document.querySelector("[name=second]");
 const plusButton = document.querySelector(".plus");
@@ -16,7 +16,9 @@ plusButton.addEventListener("click", function() {
   // const sum = parseInt(firstElement.value) + parseInt(secondElement.value);
   const firstNumber = parseInt(firstElement.value);
   const secondNumber = parseInt(secondElement.value);
-  result.innerHTML = sum(firstNumber, secondNumber);
+  let childResult = sum(firstNumber, secondNumber).toString();
+  childResult = createDivWithContent(childResult);
+  appendElementToElement(result, childResult);
   operator.innerHTML = "+";
   digitCounter.innerHTML = countDigits(sum(firstNumber, secondNumber));
 });
@@ -24,7 +26,9 @@ plusButton.addEventListener("click", function() {
 minusButton.addEventListener("click", function() {
   const firstNumber = parseInt(firstElement.value);
   const secondNumber = parseInt(secondElement.value);
-  result.innerHTML = minus(firstNumber, secondNumber);
+  let childResult = minus(firstNumber, secondNumber).toString();
+  childResult = createDivWithContent(childResult);
+  appendElementToElement(result, childResult);
   operator.innerHTML = "-";
   digitCounter.innerHTML = countDigits(minus(firstNumber, secondNumber));
 });
@@ -32,7 +36,9 @@ minusButton.addEventListener("click", function() {
 multiButton.addEventListener("click", function() {
   const firstNumber = parseInt(firstElement.value);
   const secondNumber = parseInt(secondElement.value);
-  result.innerHTML = multi(firstNumber, secondNumber);
+  let childResult = multi(firstNumber, secondNumber).toString();
+  childResult = createDivWithContent(childResult);
+  appendElementToElement(result, childResult);
   operator.innerHTML = "x";
   digitCounter.innerHTML = countDigits(multi(firstNumber, secondNumber));
 });
@@ -40,7 +46,9 @@ multiButton.addEventListener("click", function() {
 divideButton.addEventListener("click", function() {
   const firstNumber = parseInt(firstElement.value);
   const secondNumber = parseInt(secondElement.value);
-  result.innerHTML = divide(firstNumber, secondNumber);
+  let childResult = divide(firstNumber, secondNumber).toString();
+  childResult = createDivWithContent(childResult);
+  appendElementToElement(result, childResult);
   operator.innerHTML = "/";
   digitCounter.innerHTML = countDigits(divide(firstNumber, secondNumber));
 });
