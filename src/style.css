@@ -22,7 +22,6 @@ body {
   width: 95vw;
   background-color: lightgrey;
   height: 90vh;
-  border: solid 10px;
   padding: 10px;
   margin: 0 10px;
   flex-direction: column;
@@ -35,7 +34,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 50px;
+  margin: 10px;
   border: black solid 2px;
   background-color: rgb(215, 231, 142);
   padding: 70px 30px;
@@ -81,16 +80,6 @@ svg {
   font-weight: bold;
 }
 
-#result {
-  margin: 0 15px;
-  border: solid;
-  background-color: lightgreen;
-  width: 30px;
-  inline-size: auto;
-  height: 15px;
-  padding: 10px;
-  font-weight: bold;
-}
 .digitcounter {
   border: solid;
   background-color: lightpink;
@@ -106,6 +95,49 @@ svg {
   align-items: center;
   font-size: 16px;
   font-weight: bold;
-  margin-top: 30px;
+  margin: 30px;
   width: 170px;
+}
+
+.result-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 20px;
+  width: 300px;
+}
+#result {
+  /* margin: 0 15px; */
+  border: solid;
+  background-color: lightgreen;
+  width: 30px;
+  inline-size: auto;
+  height: 15px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.number-area {
+  display: flex;
+  width: 200px;
+
+  flex-wrap: wrap;
+  padding: 30px;
+  border: solid;
+}
+
+.numbers {
+  width: 50px;
+  height: 50px;
+  border: solid;
+  margin: 2px;
+}
+
+.numberlast {
+  width: 50px;
+  height: 50px;
+  border: solid;
+  margin: 2px 57px;
 }
