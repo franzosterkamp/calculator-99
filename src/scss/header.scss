@@ -4,8 +4,23 @@
   text-align: center;
   padding: 10px;
   border-radius: 15px;
+  margin-right: 20px;
 }
 
 .head {
   display: flex;
+  font-weight: bold;
+  align-items: center;
+}
+
+.digitcounter {
+  border: solid;
+  background-color: lightpink;
+  width: 80px;
+  inline-size: auto;
+  height: 15px;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 15px;
 }
