@@ -44,7 +44,8 @@ svg {
   background-color: lightgreen;
   // min-height: 10px;
   // padding-left: 30px;
-  height: auto;
+  height: 200px;
+  overflow: auto;
 }
 #result {
   font-weight: bold;
