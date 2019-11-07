@@ -4,99 +4,103 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.scss" />
     <title>Calculator-99</title>
   </head>
   <body>
-    <h1 class="header">Calculator-99</h1>
-    <div class="input">
-      <input
-        type="text"
-        name="first"
-        placeholder="first"
-        value="76"
-        class="first_input"
-      />
-      <div class="operator"></div>
-      <input
-        type="text"
-        name="second"
-        placeholder="second"
-        value="10"
-        class="second_input"
-      />
-    </div>
-    <div class="mid-area">
-      <div class="number-area">
-        <button class="numbers">1</button>
-        <button class="numbers">2</button>
-        <button class="numbers">3</button>
-        <button class="numbers">4</button>
-        <button class="numbers">5</button>
-        <button class="numbers">6</button>
-        <button class="numbers">7</button>
-        <button class="numbers">8</button>
-        <button class="numbers">9</button>
-        <button class="numberlast">0</button>
-      </div>
-      <div class="result-area">
-        <div>Result:</div>
-        <ul id="result"></ul>
+    <main>
+      <div class="head">
+        <h1 class="header">Calculator-99</h1>
         <div>Digit-Counter:</div>
         <div class="digitcounter">0</div>
       </div>
-    </div>
 
-    <div class="buttons">
-      <button class="plus">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-        >
-          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
-          <path d="M0 0h24v24H0z" fill="none" />
-        </svg>
-      </button>
-      <button class="minus">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-        >
-          <path d="M19 13H5v-2h14v2z" />
-          <path d="M0 0h24v24H0z" fill="none" />
-        </svg>
-      </button>
-      <button class="multi">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-        >
-          <path
-            d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-          />
-          <path d="M0 0h24v24H0z" fill="none" />
-        </svg>
-      </button>
-      <button class="divide">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-        >
-          <path
-            d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"
-          />
-          <path d="M0 0h24v24H0z" fill="none" />
-        </svg>
-      </button>
-    </div>
+      <div class="input">
+        <input
+          type="text"
+          name="first"
+          placeholder="first"
+          value="76"
+          class="first_input"
+        />
+        <div class="operator"></div>
+        <input
+          type="text"
+          name="second"
+          placeholder="second"
+          value="10"
+          class="second_input"
+        />
+      </div>
+      <div class="buttons">
+        <button class="plus">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+            <path d="M0 0h24v24H0z" fill="none" />
+          </svg>
+        </button>
+        <button class="minus">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path d="M19 13H5v-2h14v2z" />
+            <path d="M0 0h24v24H0z" fill="none" />
+          </svg>
+        </button>
+        <button class="multi">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+            />
+            <path d="M0 0h24v24H0z" fill="none" />
+          </svg>
+        </button>
+        <button class="divide">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"
+            />
+            <path d="M0 0h24v24H0z" fill="none" />
+          </svg>
+        </button>
+      </div>
+      <div class="mid-area">
+        <div class="number-area">
+          <button class="numbers">1</button>
+          <button class="numbers">2</button>
+          <button class="numbers">3</button>
+          <button class="numbers">4</button>
+          <button class="numbers">5</button>
+          <button class="numbers">6</button>
+          <button class="numbers">7</button>
+          <button class="numbers">8</button>
+          <button class="numbers">9</button>
+          <button class="numberlast">0</button>
+        </div>
+        <div class="result-area">
+          <div>Result:</div>
+          <ul id="result"></ul>
+        </div>
+      </div>
+    </main>
     <script src="index.js"></script>
   </body>
 </html>
