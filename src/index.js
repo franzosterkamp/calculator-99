@@ -16,7 +16,7 @@ plusButton.addEventListener("click", function() {
   // const sum = parseInt(firstElement.value) + parseInt(secondElement.value);
   const firstNumber = parseInt(firstElement.value);
   const secondNumber = parseInt(secondElement.value);
-  let childResult = sum(firstNumber, secondNumber).toString();
+  let childResult = sum(firstNumber, secondNumber);
   childResult = createDivWithContent(childResult);
   appendElementToElement(result, childResult);
   operator.innerHTML = "+";
@@ -26,7 +26,7 @@ plusButton.addEventListener("click", function() {
 minusButton.addEventListener("click", function() {
   const firstNumber = parseInt(firstElement.value);
   const secondNumber = parseInt(secondElement.value);
-  let childResult = minus(firstNumber, secondNumber).toString();
+  let childResult = minus(firstNumber, secondNumber);
   childResult = createDivWithContent(childResult);
   appendElementToElement(result, childResult);
   operator.innerHTML = "-";
@@ -36,7 +36,7 @@ minusButton.addEventListener("click", function() {
 multiButton.addEventListener("click", function() {
   const firstNumber = parseInt(firstElement.value);
   const secondNumber = parseInt(secondElement.value);
-  let childResult = multi(firstNumber, secondNumber).toString();
+  let childResult = multi(firstNumber, secondNumber);
   childResult = createDivWithContent(childResult);
   appendElementToElement(result, childResult);
   operator.innerHTML = "x";
@@ -46,7 +46,7 @@ multiButton.addEventListener("click", function() {
 divideButton.addEventListener("click", function() {
   const firstNumber = parseInt(firstElement.value);
   const secondNumber = parseInt(secondElement.value);
-  let childResult = divide(firstNumber, secondNumber).toString();
+  let childResult = divide(firstNumber, secondNumber);
   childResult = createDivWithContent(childResult);
   appendElementToElement(result, childResult);
   operator.innerHTML = "/";

@@ -1,5 +1,6 @@
 export function createDivWithContent(content) {
-  let divElement = document.createElement("li");
+  content = content.toString();
+  let divElement = document.createElement("div");
   divElement.innerHTML = content;
 
   return divElement;
