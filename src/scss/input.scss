@@ -1,0 +1,41 @@
+.first_input {
+  width: 130px;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: solid;
+  background-color: rgb(144, 174, 238);
+}
+
+.second_input {
+  width: 130px;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: solid;
+  justify-content: center;
+  background-color: rgb(144, 174, 238);
+}
+
+.input {
+  width: 290px;
+  height: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px;
+  border: black solid 2px;
+  background-color: rgb(215, 231, 142);
+  padding: 30px 20px;
+  border-radius: 15px;
+  /* align-items: center;
+  background-color: lightgoldenrodyellow; */
+}
+
+.operator {
+  font-size: 20px;
+  font-weight: bold;
+  width: 50px;
+  text-align: center;
+  margin: 5px;
+}
