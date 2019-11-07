@@ -1,5 +1,3 @@
-import { numberLiteralTypeAnnotation } from "@babel/types";
-
 export function sum(first, second) {
   return first + second;
 }
